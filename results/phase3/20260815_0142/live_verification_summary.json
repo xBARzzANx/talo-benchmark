@@ -1,0 +1,35 @@
+{
+  "run_id": "20260815_0142",
+  "purpose": "Functional reproducibility check for B5 (TALO) per Section 6, Design-Entscheidung E4: live end-to-end run over all 60 tasks, compared against the Phase 2 cache at temperature=0.0.",
+  "checked": 60,
+  "total_deviations": 36,
+  "deviations_by_task_class": {
+    "sql_generation": 7,
+    "kpi_interpretation": 14,
+    "report_generation": 15
+  },
+  "notes": {
+    "anomaly_detection": "0/15 deviations -- fully deterministic (structured JSON output).",
+    "sql_generation": "7/15 deviations at the text level; 3/7 changed the execution-accuracy score (all cached=0 -> live=1). One case (sql_005) was a literal SQL syntax typo in the cached generation ('THTHEN') that self-corrected in the live regeneration; the other two (sql_009, sql_010) reflect different join/filter choices, not reproducibility artifacts of the extractor.",
+    "kpi_interpretation": "14/15 deviations -- wording/phrasing differences only (same figures, direction, and conclusion in every case checked); not re-judged live to avoid additional API cost, since B5's reported score always uses the Phase-2-cache judge score regardless.",
+    "report_generation": "15/15 deviations -- wording/phrasing differences only, same pattern as KPI.",
+    "conclusion": "temperature=0.0 does not guarantee byte-identical output from the Gemini, Claude, and GPT APIs used here; only anomaly_detection (JSON-only output) was fully reproducible. This does not affect the Chapter 6 reported scores, which always use the Phase-2 cache for B5, but should be noted as a limitation of 'temperature=0.0 implies determinism' in Section 7.4."
+  },
+  "sql_score_changes": [
+    {
+      "task_id": "sql_005",
+      "cached_score": 0,
+      "live_score": 1
+    },
+    {
+      "task_id": "sql_009",
+      "cached_score": 0,
+      "live_score": 1
+    },
+    {
+      "task_id": "sql_010",
+      "cached_score": 0,
+      "live_score": 1
+    }
+  ]
+}

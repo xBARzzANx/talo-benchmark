@@ -1,0 +1,24 @@
+benchmark:
+  n_tasks_per_class: 15
+  difficulty_distribution: {easy: 5, medium: 5, hard: 5}
+  task_classes:
+    - sql_generation
+    - anomaly_detection
+    - kpi_interpretation
+    - report_generation
+
+phase1:
+  prompt_strategy: zero_shot
+  repetitions: 1
+  include_gold_standard: true
+
+phase2:
+  prompt_strategies: [few_shot, chain_of_thought, structured_output]
+  apply_to: top_model_per_class
+  repetitions: 1
+
+evaluation:
+  sql:    {metric: execution_accuracy}
+  anomaly: {metrics: [precision, recall, f1]}
+  kpi:    {metric: llm_as_judge, scale: "1_to_5"}
+  report: {metrics: [llm_as_judge, structure_compliance], scale: "1_to_5"}

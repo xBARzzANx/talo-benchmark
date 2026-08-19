@@ -1,0 +1,28 @@
+TALO Benchmark Dataset
+Copyright (c) 2026 Barsan Shemari
+
+This dataset (the contents of the benchmark/ directory -- the anomaly
+detection, KPI interpretation, and report generation task sets, which are
+original contributions of the accompanying thesis) is licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+To view a copy of this license, visit:
+https://creativecommons.org/licenses/by/4.0/
+
+or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+Summary -- you are free to:
+  - Share   -- copy and redistribute the material in any medium or format
+  - Adapt   -- remix, transform, and build upon the material
+  for any purpose, even commercially, under the following terms:
+  - Attribution -- you must give appropriate credit, provide a link to the
+    license, and indicate if changes were made.
+
+This is a human-readable summary of (and not a substitute for) the license.
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Scope note: the SQL generation task set (benchmark/sql_generation/) is
+derived from the BIRD benchmark (https://bird-bench.github.io/) and remains
+subject to BIRD's original license, not this license. See README.md,
+section "Benchmark Dataset", for details. The SQLite database files
+themselves are not redistributed in this repository.

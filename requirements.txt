@@ -1,0 +1,30 @@
+# LLM APIs
+anthropic>=0.49.0
+openai>=1.30.0
+google-generativeai>=0.7.0
+litellm>=1.40.0
+
+# Local models
+ollama>=0.2.0
+
+# Data & evaluation
+pandas>=2.0.0
+numpy>=1.26.0
+scikit-learn>=1.4.0       # F1-Score für Anomaly Detection
+sqlparse>=0.5.0            # SQL parsing/validation
+
+# Output & serialization
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+rich>=13.0.0               # schöne CLI-Ausgabe
+
+# Analysis & visualization
+matplotlib>=3.8.0
+seaborn>=0.13.0
+jupyter>=1.0.0
+
+# Demo interface
+streamlit>=1.35.0
+
+# Testing
+pytest>=8.0.0

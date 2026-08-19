@@ -1,0 +1,106 @@
+# TALO Alignment Matrix
+#
+# Single source of truth for all routing decisions. Derived from the Phase 1
+# and Phase 2 benchmark results documented in Chapter 4 of the thesis.
+#
+# Scores reflect the evaluation protocol defined in Sections 4.4.1 and 4.4.2.
+# Extractor and parser sensitivity is documented in Section 4.4.5.
+#
+# This file is read by talo/router.py. Do not hardcode routing decisions
+# elsewhere in the codebase.
+
+metadata:
+  derived_from:
+    phase1_run_ids:
+      - "20260522_2030"
+      - "20260522_2219_gemini_retry"
+    phase2_run_id: "20260523_1406"
+  benchmark_size: 60
+  tasks_per_class: 15
+  difficulty_distribution:
+    easy: 5
+    medium: 5
+    hard: 5
+  gold_standard_excluded: claude-sonnet-4-6
+  temperature: 0.0
+
+routing:
+
+  sql_generation:
+    model_id: gemini-2.5-flash
+    strategy: few_shot
+    confidence: medium
+    metric: execution_accuracy
+    phase1_score: 0.667
+    phase2_score: 0.600
+    rationale: >
+      Gemini 2.5 Flash achieved the highest execution accuracy (0.667) across
+      all difficulty levels in Phase 1. Few-Shot is selected as the prompt
+      strategy at 0.600 under the reported evaluation protocol. Structured
+      Output collapsed to 0.000 under every extraction variant tested and is
+      excluded. Chain-of-Thought scored 0.333 under the reported protocol but
+      reaches parity with Few-Shot at 0.600 under an alternative extraction
+      rule (see Section 4.4.5). Few-Shot is therefore preferred on robustness
+      grounds rather than on a clear score advantage, which is reflected in
+      the medium confidence rating.
+
+  anomaly_detection:
+    model_id: gpt-4.1-mini
+    strategy: few_shot
+    confidence: high
+    metric: f1_score
+    phase1_score: 0.978
+    phase2_score: 0.978
+    rationale: >
+      GPT-4.1-mini achieved the highest F1 score (0.978) in Phase 1, with
+      near-perfect performance across all difficulty levels. Few-Shot
+      maintained this performance in Phase 2 (0.978), while Chain-of-Thought
+      (0.878) and Structured Output (0.681) both scored below the Zero-Shot
+      baseline. GPT-4.1-mini is invariant to the anomaly parser variant
+      applied (see Section 4.4.5), which strengthens the empirical basis for
+      this routing decision.
+
+  kpi_interpretation:
+    model_id: claude-haiku-4-5
+    strategy: chain_of_thought
+    confidence: medium
+    metric: llm_judge_mean
+    phase1_score: 4.800
+    phase2_score: 4.756
+    rationale: >
+      Claude Haiku 4.5 was the strongest benchmark model in Phase 1 (4.800),
+      with Claude Sonnet 4.5 excluded as gold standard. Chain-of-Thought
+      marginally outperformed Few-Shot in Phase 2 (4.756 vs 4.712),
+      particularly on easy tasks (5.000). Score differences between strategies
+      are small, indicating that the model operates near its performance
+      ceiling on this task class regardless of strategy.
+
+  report_generation:
+    model_id: gpt-4.1-mini
+    strategy: few_shot
+    confidence: low
+    metric: llm_judge_mean
+    phase1_score: 5.000
+    phase2_score: 5.000
+    rationale: >
+      GPT-4.1-mini and Claude Haiku 4.5 both achieved the maximum score of
+      5.000 in Phase 1. All three prompt strategies also scored 5.000 in
+      Phase 2, indicating a ceiling effect in the LLM-as-Judge metric.
+      GPT-4.1-mini was selected for consistency with the anomaly detection
+      routing. Few-Shot is the default strategy. This routing decision carries
+      low confidence due to insufficient metric differentiation.
+
+# Secondary criterion: where two models are empirically equivalent on quality,
+# the lower-cost model is preferred. Applied to report_generation, where
+# GPT-4.1-mini and Claude Haiku 4.5 tied at 5.000.
+cost_tiebreak:
+  enabled: true
+  applied_to:
+    - report_generation
+
+# Fallback when the task classification module cannot assign a class with
+# sufficient confidence. KPI interpretation is chosen because it is the least
+# format-constrained class and degrades most gracefully on misclassification.
+fallback:
+  task_class: kpi_interpretation
+  min_confidence: 0.5

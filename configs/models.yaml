@@ -1,0 +1,42 @@
+benchmark_models:
+  - id: gpt-4.1-mini
+    provider: openai
+    api_name: gpt-4.1-mini
+    type: closed_source
+    context_window: 128000
+
+  - id: claude-haiku-4-5
+    provider: anthropic
+    api_name: claude-haiku-4-5-20251001
+    type: closed_source
+    context_window: 200000
+
+  - id: gemini-2.5-flash
+    provider: google
+    api_name: gemini-2.5-flash
+    type: closed_source
+    context_window: 1000000
+
+  - id: llama-3.1-8b
+    provider: ollama
+    api_name: llama3.1:8b
+    type: open_source
+    context_window: 131072
+
+  - id: mistral-7b
+    provider: ollama
+    api_name: mistral:7b-instruct
+    type: open_source
+    context_window: 32768
+
+gold_standard:
+  - id: claude-sonnet-4-6
+    provider: anthropic
+    api_name: claude-sonnet-4-5-20250929
+    type: closed_source
+    context_window: 200000
+
+judge:
+  model: claude-sonnet-4-5-20250929
+  provider: anthropic
+  temperature: 0.0

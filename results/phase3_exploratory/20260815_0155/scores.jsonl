@@ -1,0 +1,75 @@
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_001", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_002", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_003", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_004", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_005", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_006", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_007", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_008", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_009", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_010", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_011", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_012", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_013", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_014", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_015", "model_id": "gpt-4.1-mini", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_001", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_002", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_003", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_004", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_005", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_006", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_007", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_008", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_009", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_010", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_011", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_012", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_013", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_014", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_015", "model_id": "claude-haiku-4-5", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_001", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_002", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_003", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_004", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_005", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 0, "execution_error": "near \"THTHEN\": syntax error"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_006", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_007", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_008", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_009", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_010", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_011", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_012", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_013", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_014", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 0, "execution_error": "incomplete input"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_015", "model_id": "gemini-2.5-flash", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_001", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": "near \"Note\": syntax error"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_002", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": "no such column: CPK"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_003", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": "no such column: HGB"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_004", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_005", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_006", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_007", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 1, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_008", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": "near \"(\": syntax error"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_009", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": "near \"Note\": syntax error"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_010", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_011", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": "no such column: CPK"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_012", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_013", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": "no such column: Free Meal Count (K-12)"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_014", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": "ORDER BY clause should come after UNION ALL not before"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_015", "model_id": "llama-3.1-8b", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_001", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_002", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "no such column: Laboratory.Patient_ID"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_003", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "no such column: Laboratory.Patient_ID"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_004", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_005", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "no such column: A13"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_006", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "no such column: Laboratory.Patient_ID"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_007", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "no such column: Examination.GLU"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_008", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "near \"%\": syntax error"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_009", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "no such column: CharterFundingType"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_010", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": null}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_011", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "no such column: Laboratory.Patient_ID"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_012", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "near \"To\": syntax error"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_013", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "near \"Meal\": syntax error"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_014", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "near \"To\": syntax error"}
+{"condition": "exploratory_few_shot", "task_class": "sql_generation", "task_id": "sql_015", "model_id": "mistral-7b", "strategy": "few_shot", "score": 0, "execution_error": "near \"To\": syntax error"}
