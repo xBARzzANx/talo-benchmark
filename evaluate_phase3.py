@@ -2,9 +2,9 @@
 Phase 3 evaluation: scores all five conditions (B1-B5) x four task classes,
 using the same evaluators and the same primary extractor variants as
 Phase 1/2 (src/evaluators/extractors.py, keyword_line for SQL and permissive
-for anomaly parsing -- see CLAUDE.md, Section 5).
+for anomaly parsing).
 
-Data sources per condition/class cell, cache-first (CLAUDE.md, Regel 3):
+Data sources per condition/class cell, cache-first:
   1. Phase 1 cache (zero-shot) for B1/B2/B3, and for any B4/B5 cell whose
      resolved strategy happens to be zero_shot (none currently).
   2. Phase 2 cache (top-model-per-class, 3 strategies) for B4 cells that

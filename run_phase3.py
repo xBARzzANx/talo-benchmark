@@ -1,7 +1,7 @@
 """
 Phase 3 runner: the five evaluation conditions (B1-B5) for Chapter 6.
 
-Cache-first (CLAUDE.md, Regel 3): reuses Phase 1 (zero-shot, all models) and
+Cache-first: reuses Phase 1 (zero-shot, all models) and
 Phase 2 (three strategies, top model per class) raw model responses wherever
 a condition's resolved (model, strategy) per task class is already covered.
 New generation calls are only made where a cache gap exists.
@@ -22,7 +22,7 @@ Per the Chapter 6 design (Section 6, Design-Entscheidung E4):
 Expected total when running B4 + B5 for real: ~90 new API calls.
 
 No API calls are made without an explicit, itemized cost estimate and a
-confirmation prompt (CLAUDE.md, Regel 2), unless --yes is passed.
+confirmation prompt, unless --yes is passed.
 
 Usage:
   python run_phase3.py --dry-run
@@ -345,7 +345,7 @@ def main() -> None:
     if not args.yes:
         console.print(
             f"\n[bold]Bestaetigung erforderlich:[/bold] geschaetzte Kosten ~${total_cost:.4f} "
-            f"fuer echte API-Calls (Rule 2, CLAUDE.md)."
+            f"fuer echte API-Calls."
         )
         answer = input("Fortfahren? [y/N] ").strip().lower()
         if answer != "y":

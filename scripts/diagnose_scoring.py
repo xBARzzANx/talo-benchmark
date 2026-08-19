@@ -336,7 +336,7 @@ def main():
     diagnose_anomaly(phase1, phase2, tasks)
 
     print("\n" + "=" * 78)
-    print("FERTIG. Bitte die komplette Ausgabe zurueckschicken.")
+    print("FERTIG.")
     print("=" * 78)
 
 

@@ -49,7 +49,7 @@ CONDITION_COLORS = {
 
 # Judge model is called via its litellm string in src/evaluators/llm_judge.py
 # (anthropic/claude-sonnet-4-5). The pricing.yaml lookup key is the legacy
-# "claude-sonnet-4-6" -- see CLAUDE.md, Section 4 ("Modell-ID-Hinweis").
+# "claude-sonnet-4-6" -- see configs/pricing.yaml for the full note.
 # Do not rename this key.
 JUDGE_PRICING_KEY = "claude-sonnet-4-6"
 

@@ -77,7 +77,7 @@ class TALOOrchestrator:
             dry_run: If True (default), classification/routing/prompt are
                 computed but no model call is made -- output stays None.
                 Only set to False with explicit user confirmation that a
-                paid API call may be made (see CLAUDE.md, Regel 2).
+                paid API call may be made.
             **slot_values: Explicit template slot values (e.g. schema/data/
                 kpi_name), used in place of the placeholder defaults for the
                 resolved task class. Useful when the caller has structured
